@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Configurator</title>
+	<link rel="stylesheet" href="/style.css">
+	<script src="/index.js"></script>
+</head>
+<body>
+	<div id="stage1">
+		<h1>What are you?</h1>
+		<button onclick="showStuWl()">Student</button>
+		<button onclick="showHobWl()">Hobbyist</button>
+		<button onclick="showProWl()">Professional</button>
+	</div>	
+
+	<div id="stuWl" class="hide"> <!-- STUDENT WORKLOADS -->
+		<h1>What will you be working on?</h1>
+		<button onclick="showGamBd()">Gaming</button>
+		<button onclick="showRenBd()">Rendering</button>
+		<button onclick="showHosBd()">Hosting</button>
+	</div>
+
+	<div id="hobWl" class="hide"> <!-- HOBBYIST WORKLOADS -->
+		<h1>What will you be working on?</h1>
+		<button onclick="showOveBd()">Overclocking</button>
+		<button onclick="showVidBd()">Video editing</button>
+		<button onclick="showLlaBd()">low lvl AI</button>
+	</div>
+
+	<div id="proWl" class="hide"> <!-- PROFESSIONAL WORKLOADS -->
+		<h1>What will you be working on?</h1>
+		<button onclick="showReBd()">Research</button>
+		<button onclick="showAiBd()">AI</button>
+		<button onclick="showClBd()">Cloud</button>
+	</div>
+
+	<div id="stuGam" class="hide"> <!-- STUDENT GAMING + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLg()">Low Gaming</button>
+		<button onclick="displayMg()">Mid Gaming</button>
+		<button onclick="displayIg()">Inifinite Gaming</button>
+	</div>
+
+	<div id="stuRen" class="hide"> <!-- STUDENT RENDERING + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLr()">Low Rendering</button>
+		<button onclick="displayMr()">Mid Rendering</button>
+		<button onclick="displayIr()">Inifinite Rendering</button>
+	</div>
+
+	<div id="stuHos" class="hide"> <!-- STUDENT HOSTING + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLh()">Low Hosting</button>
+		<button onclick="displayMh()">Mid Hosting</button>
+		<button onclick="displayIh()">Inifinite Hostig</button>
+	</div>
+
+	<div id="hobOve" class="hide"> <!-- HOBBYIST OVERCLOCKING + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLo()">Low Overclocking</button>
+		<button onclick="displayMo()">Mid Overclocking</button>
+		<button onclick="displayIo()">Inifinite Overclocking</button>
+	</div>
+
+	<div id="hobVid" class="hide"> <!-- HOBBYIST VIDEO + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLv()">Low Video Edi</button>
+		<button onclick="displayMv()">Mid Video Edi</button>
+		<button onclick="displayIv()">Inifinite Video Edi</button>
+	</div>
+
+	<div id="hobAi" class="hide"> <!-- Hobbyist AI + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLa()">Low AI</button>
+		<button onclick="displayMa()">Mid AI</button>
+		<button onclick="displayIa()">Inifinite AI</button>
+	</div>
+
+	<div id="proRe" class="hide"> <!-- PRO RESEARCH + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLre()">Low Research</button>
+		<button onclick="displayMre()">Mid Research</button>
+		<button onclick="displayIre()">Inifinite Research</button>
+	</div>
+
+	<div id="proAI" class="hide"> <!-- PRO VIDEO + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLai()">Low AI</button>
+		<button onclick="displayMai()">Mid AI</button>
+		<button onclick="displayIai()">Inifinite AI</button>
+	</div>
+
+	<div id="proCL" class="hide"> <!-- PRO AI + BUDGET -->
+		<h1>What is your Budget?</h1>
+		<button onclick="displayLc()">Low Cloud</button>
+		<button onclick="displayMc()">Mid Cloud</button>
+		<button onclick="displayIc()">Inifinite Cloud</button>
+	</div>
+
+<!-- EVERYTHING BELOW THIS LINE ARE ITEMS -->
+
+	<div class="hide" id="Lg"> <!-- SHITTY GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/mqySW">
+	</div>
+	
+	<div class="hide" id="Mg"> <!-- OK GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/dfvH5">
+	</div>
+
+	<div class="hide" id="Mr"> <!-- OK RENDERING GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/aqMUY">
+	</div>
+
+	<div class="hide" id="Ig"> <!-- VERY GOOD GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/ciuSV">
+	</div>
+
+	<div class="hide" id="Lh"> <!-- SHITTY CPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/amnPR">
+	</div>
+	
+	<div class="hide" id="Mh"> <!-- MID CPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/pxJ25">
+	</div>
+
+	<div class="hide" id="Ih"> <!-- GOOD CPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://shorturl.at/sSZ18">
+	</div>
+
+	<div class="hide" id="Io"> <!-- GOOD CPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://images.anandtech.com/doci/16529/PA5A6921abc219.JPG">
+	</div>
+
+	<div class="hide" id="Iv"> <!-- SEMI PRO GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://www.nvidia.com/content/dam/en-zz/Solutions/gtcs21/a10/og-new/nvidia-a10-og.jpg">
+	</div>
+
+	<div class="hide" id="Ire"> <!-- VERY PRO CPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://imageio.forbes.com/specials-images/imageserve/63bdb2cba16f90c3488b08d5/Intel-4th-Gen-Intel-Xeon-1/960x0.jpg?format=jpg&width=960">
+	</div>
+	
+	<div class="hide" id="Iai"> <!-- VERY PRO GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://i.ebayimg.com/images/g/q0QAAOSw5K1kSTH0/s-l1600.jpg">
+	</div>
+
+	<div class="hide" id="Mcl"> <!-- VERY PRO GPU -->
+		<h1>We recommend this product</h1>
+		<img src="https://www.servethehome.com/wp-content/uploads/2021/04/AMD-Threadripper-Pro-3955WX-Cover.jpg">
+	</div>
+	
+</body>
+</html>
